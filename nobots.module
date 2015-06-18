@@ -1,8 +1,8 @@
 <?php
 /**
-* @file
-* Code for the No Bots module.
-*/
+ * @file
+ * Code for the No Bots module.
+ */
 
 /**
  * Implements hook_init().

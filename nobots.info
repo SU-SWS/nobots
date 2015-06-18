@@ -1,0 +1,4 @@
+name = No Bots
+description = Blocks (well-behaved) search engine robots from crawling, indexing, or archiving your site.
+core = 7.x
+version = 7.x-1.x-dev

@@ -4,5 +4,7 @@
     "type": "stanford-module",
     "license": "GPL-2.0+",
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "composer/installers": "~1.0"
+    }
 }

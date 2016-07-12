@@ -1,0 +1,7 @@
+{
+    "name": "su-sws/nobots",
+    "description": "This module blocks (well-behaved) search engine robots from crawling, indexing, or archiving your site by setting a \"X-Robots-Tag: noindex,nofollow,noarchive\" HTTP header.",
+    "type": "library",
+    "minimum-stability": "dev",
+    "require": {}
+}

@@ -1,0 +1,11 @@
+No bots x.x-x.x xxxx-xx-xx
+--------------------------------
+
+No bots 7.x-1.0+7-dev 2016-07-19
+--------------------------------------
+- Added packagist info
+- Added require composer/installers
+
+No bots 7.x-1.0
+---------------------------------------
+- Initial Release

@@ -7,7 +7,7 @@
 /**
  *  Implements hook_help().
  */
-function nobots_help($route_name, RouteMatchInterface $route_match) {
+function nobots_help($route_name, \Drupal\Core\Routing\CurrentRouteMatch $route_match) {
   switch ($route_name) {
     case 'help.page.nobots':
       $output = "<h3>" . t("About the No Bots Module") . "</h3>";

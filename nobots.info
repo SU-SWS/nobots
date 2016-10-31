@@ -1,6 +1,0 @@
-name = No Bots
-description = Blocks (well-behaved) search engine robots from crawling, indexing, or archiving your site.
-version = 7.x-1.0-dev
-core = 7.x
-package = Stanford
-project = nobots

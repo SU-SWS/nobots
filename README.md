@@ -1,5 +1,5 @@
 #[No Bots](https://github.com/SU-SWS/nobots)
-##### Version: 7.x-1.0-dev
+##### Version: 8.x-1.0-dev
 
 Maintainers: [jbickar](https://github.com/jbickar), [sherakama](https://github.com/sherakama)
 [Changelog.txt](CHANGELOG.txt)

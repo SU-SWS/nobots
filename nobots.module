@@ -8,7 +8,7 @@
  * Implements hook_init().
  */
 function nobots_init() {
-  drupal_add_http_header("X-Robots-Tag", "noindex,nofollow,noarchive");
+  drupal_set_header("X-Robots-Tag: noindex,nofollow,noarchive");
 }
 
 /**

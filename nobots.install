@@ -17,7 +17,7 @@ function nobots_install() {
  *
  * Set the nobots variable to TRUE.
  */
-function nobots_update_7201(&$sandbox) {
+function nobots_update_7201() {
   variable_set('nobots', 'TRUE');
 }
 

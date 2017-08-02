@@ -14,6 +14,7 @@ function nobots_install() {
 
 /**
  * Implements hook_update_N().
+ * 
  * Set the nobots variable to TRUE.
  */
 function nobots_update_7201(&$sandbox) {

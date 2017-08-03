@@ -23,6 +23,12 @@ Configuration
 Enable the module to block search engine robots.
 Disable the module to let them crawl your site.
 
+Advanced Configuration
+---
+You can set the `nobots` variable to **FALSE** to leave the module enabled, yet still allow robots to crawl your site.
+
+An example use-case would be to set `$conf['nobots'] = FALSE;` in settings.php for the production environment, and `TRUE` for all other environments.
+
 Troubleshooting
 ---
 

@@ -8,7 +8,7 @@
  * Implements hook_init().
  */
 function nobots_init() {
-  if (variable_get('nobots') == TRUE) {
+  if (variable_get('nobots', TRUE)) {
     drupal_add_http_header("X-Robots-Tag", "noindex,nofollow,noarchive");
   }
 }
@@ -22,6 +22,9 @@ function nobots_help($path, $arg) {
       $output = "<h3>" . t("About the No Bots Module") . "</h3>";
       $output .= "<p>" . t("This module blocks (well-behaved) search engine robots from crawling, indexing, or archiving your site by setting a &quot;X-Robots-Tag: noindex,nofollow,noarchive&quot; HTTP header.") . "</p>";
       $output .= "<p>" . t("Enable the module to block search engine robots. Disable the module to let them crawl your site.") . "</p>";
+      $output .= "<h3>" . t("Advanced Configuration") . "</h3>";
+      $output .= "<p>" . t('You can set the &quot;nobots&quot; variable to <strong>FALSE</strong> if you want to leave the module enabled but not block search engine robots from your site. An example use-case for this would be to set <code>$conf["nobots"] = FALSE</code> in settings.php for a production environment, and TRUE for all other environments.') . "</p>";
+
       return $output;
   }
 }

@@ -1,10 +1,7 @@
 {
     "name": "su-sws/nobots",
     "description": "This module blocks (well-behaved) search engine robots from crawling, indexing, or archiving your site by setting a \"X-Robots-Tag: noindex,nofollow,noarchive\" HTTP header.",
-    "type": "drupal-custom-module",
+    "type": "drupal-module",
     "license": "GPL-2.0+",
-    "minimum-stability": "dev",
-    "require": {
-        "composer/installers": "~1.0"
-    }
+    "minimum-stability": "dev"
 }

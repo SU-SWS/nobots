@@ -9,7 +9,7 @@ use Symfony\Component\HttpKernel\KernelEvents;
 /**
  * Response subscriber to handle finished responses.
  */
-class FinishResponseSubscriber  implements EventSubscriberInterface {
+class FinishResponseSubscriber implements EventSubscriberInterface {
 
   /**
    * {@inheritdoc}

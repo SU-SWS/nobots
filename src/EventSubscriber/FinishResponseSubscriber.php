@@ -26,11 +26,10 @@ class FinishResponseSubscriber implements EventSubscriberInterface {
    * @param \Symfony\Component\HttpKernel\Event\FilterResponseEvent $event
    *   The event to process.
    */
-
   public function onRespond(FilterResponseEvent $event) {
     if (Settings::get('nobots', TRUE)) {
       $response = $event->getResponse();
-      $response->headers->set('X-Robots-Tag', 'noindex,nofollow,noarchive', FALSE); 
+      $response->headers->set('X-Robots-Tag', 'noindex,nofollow,noarchive', FALSE);
     }
   }
 

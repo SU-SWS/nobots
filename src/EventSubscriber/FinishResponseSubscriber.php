@@ -28,8 +28,10 @@ class FinishResponseSubscriber implements EventSubscriberInterface {
    */
 
   public function onRespond(FilterResponseEvent $event) {
-    $response = $event->getResponse();
-    $response->headers->set('X-Robots-Tag', 'noindex,nofollow,noarchive', FALSE); 
+    if (Settings::get('nobots', TRUE)) {
+      $response = $event->getResponse();
+      $response->headers->set('X-Robots-Tag', 'noindex,nofollow,noarchive', FALSE); 
+    }
   }
 
 }

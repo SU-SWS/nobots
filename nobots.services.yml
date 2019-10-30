@@ -1,5 +1,6 @@
 services:
   nobots.finish_response_subscriber:
     class: Drupal\nobots\EventSubscriber\FinishResponseSubscriber
+    arguments: ['@state']
     tags:
       - { name: event_subscriber }

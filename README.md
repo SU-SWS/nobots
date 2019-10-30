@@ -29,6 +29,8 @@ You can set the `nobots` variable to **FALSE** to leave the module enabled, yet 
 
 An example use-case would be to set `$settings['nobots'] = FALSE;` in settings.php for the production environment, and `TRUE` for all other environments.
 
+You can also set the state `nobots` to **FALSE**. `drush state:set nobots 0` would set this state to false.
+
 Troubleshooting
 ---
 

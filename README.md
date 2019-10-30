@@ -1,5 +1,5 @@
-#[No Bots](https://github.com/SU-SWS/nobots)
-##### Version: 8.x-1.0-dev
+# [No Bots](https://github.com/SU-SWS/nobots)
+##### Version: 8.x
 
 Maintainers: [jbickar](https://github.com/jbickar), [sherakama](https://github.com/sherakama), [pookmish](https://github.com/pookmish)
 [Changelog.txt](CHANGELOG.txt)
@@ -28,6 +28,8 @@ Advanced Configuration
 You can set the `nobots` variable to **FALSE** to leave the module enabled, yet still allow robots to crawl your site.
 
 An example use-case would be to set `$settings['nobots'] = FALSE;` in settings.php for the production environment, and `TRUE` for all other environments.
+
+You can also set the state `nobots` to **FALSE**. `drush state:set nobots 0` would set this state to false.
 
 Troubleshooting
 ---

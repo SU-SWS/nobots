@@ -10,14 +10,17 @@ use Drupal\Tests\BrowserTestBase;
  * @package Drupal\Tests\nobots\Unit
  * @group nobots
  */
-class NobotsDisabledTest extends BrowserTestBase {
+class NobotsTest extends BrowserTestBase {
 
   /**
-   * Modules to enable.
-   *
-   * @var array
+   * {@inheritdoc}
    */
-  public static $modules = ['system'];
+  protected static $modules = ['system', 'nobots'];
+
+  /**
+   * {@inheritdoc}
+   */
+  protected $defaultTheme = 'stable';
 
   /**
    * Test that the header does not exist.
@@ -26,6 +29,11 @@ class NobotsDisabledTest extends BrowserTestBase {
     $this->drupalGet('<front>');
     $header = $this->getSession()->getResponseHeader('x-robots-tag');
     $this->assertEquals('', $header);
+
+    \Drupal::state()->set('nobots', TRUE);
+    $this->drupalGet('<front>');
+    $header = $this->getSession()->getResponseHeader('x-robots-tag');
+    $this->assertEquals('noindex,nofollow,noarchive', $header);
   }
 
 }

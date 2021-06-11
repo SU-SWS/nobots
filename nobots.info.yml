@@ -1,4 +1,4 @@
-name: No Bots
+name: 'No Bots'
 type: module
 description: 'Blocks (well-behaved) search engine robots from crawling, indexing, or archiving your site.'
 version: 8.x-2.1

@@ -1,6 +1,6 @@
 name: 'No Bots'
 type: module
 description: 'Blocks (well-behaved) search engine robots from crawling, indexing, or archiving your site.'
-version: 8.x-2.1
+version: 8.x-2.2-dev
 core_version_requirement: ^8.8 || ^9
 package: Stanford

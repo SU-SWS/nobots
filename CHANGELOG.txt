@@ -1,8 +1,8 @@
 Nobots
 
-8.x-2.0
+8.x-2.1
 --------------------------------------------------------------------------------
-_Release Date: 2020-05-15_
+_Release Date: 2021-06-11_
 
 - D8CORE-1644: Dev branch workflow (fbc6f83)
 - Update nobots.info.yml (#8) (57b4c6c)

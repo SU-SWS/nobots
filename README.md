@@ -29,6 +29,7 @@ You can set the `nobots` variable to **FALSE** to leave the module enabled, yet 
 
 An example use-case would be to set `$settings['nobots'] = FALSE;` in settings.php for the production environment, and `TRUE` for all other environments.
 
+To set the state `nobots` to **TRUE**. `drush @[alias] state:set nobots 1` would block robots.
 You can also set the state `nobots` to **FALSE**. `drush state:set nobots 0` would set this state to false.
 
 Troubleshooting
@@ -56,3 +57,7 @@ Steps to build a new release:
 - Give the PR a semver-compliant label, e.g., (`patch`, `minor`, `major`).  This may happen automatically via Github actions (if a labeler action is configured).
 - When the PR is merged to `master`, a new tag will be created automatically, bumping the version by the semver label.
 - The github action is built from: [semver-release-action](https://github.com/K-Phoen/semver-release-action), and further documentation is available there.
+
+Deprecated
+---
+This repo and su-sws/nobots is replaced by [drupal/nobots](https://www.drupal.org/project/nobots).

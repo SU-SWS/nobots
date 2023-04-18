@@ -4,7 +4,7 @@ namespace Drupal\nobots\EventSubscriber;
 
 use Drupal\Core\State\StateInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Symfony\Component\HttpKernel\Event\FilterResponseEvent;
+use Symfony\Component\HttpKernel\Event\ResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 use Drupal\Core\Site\Settings;
 
@@ -41,11 +41,11 @@ class FinishResponseSubscriber implements EventSubscriberInterface {
   /**
    * Sets extra headers on successful responses.
    *
-   * @param \Symfony\Component\HttpKernel\Event\FilterResponseEvent $event
+   * @param \Symfony\Component\HttpKernel\Event\ResponseEvent $event
    *   The event to process.
    */
-  public function onRespond(FilterResponseEvent $event) {
-    if (Settings::get('nobots', TRUE) && $this->state->get('nobots', TRUE)) {
+  public function onRespond(ResponseEvent $event) {
+    if (Settings::get('nobots', FALSE) || $this->state->get('nobots', FALSE)) {
       $response = $event->getResponse();
       $response->headers->set('X-Robots-Tag', 'noindex,nofollow,noarchive', FALSE);
     }

@@ -4,3 +4,5 @@ description: 'Blocks (well-behaved) search engine robots from crawling, indexing
 version: 8.x-2.2-dev
 core_version_requirement: ^8.8 || ^9
 package: Stanford
+lifecycle: deprecated
+lifecycle_link: https://github.com/SU-SWS/nobots/blob/8.x-2.x/README.md#deprecated
